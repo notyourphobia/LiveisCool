@@ -1,0 +1,4 @@
+@import "commons";
+.col-2{
+    @include test;
+}

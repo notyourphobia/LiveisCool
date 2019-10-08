@@ -1,0 +1,14 @@
+$primaryColor: orange;
+$secondaryColor: rgba(255,0,0,1);
+$allWidths: 75.354%;
+$value: 24;
+
+@function lighten-colors($x){
+    @return lighten($x, 20%);
+}
+
+@mixin test {
+    background-color: $primaryColor;
+    font-size: $value + px;
+    color: lighten-colors($primaryColor);
+}
